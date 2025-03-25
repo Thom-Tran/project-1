@@ -1,0 +1,40 @@
+digraph Login_Register_Process {
+	rankdir=TB size=10 splines=polyline
+	Start [label="Bắt đầu" fillcolor=lightgreen shape=oval style=filled]
+	ChooseAction [label="Chọn Đăng nhập hoặc Đăng ký" fillcolor=lightblue shape=diamond style=filled]
+	EnterRegInfo [label="Nhập thông tin đăng ký" shape=parallelogram]
+	SendToFirebaseReg [label="Gửi dữ liệu lên Firebase" shape=box]
+	CheckRegSuccess [label="Firebase kiểm tra thông tin" shape=diamond]
+	RegSuccess [label="Tạo tài khoản thành công
+Chuyển đến trang chính" fillcolor=lightgreen shape=parallelogram style=filled]
+	RegFail [label="Đăng ký thất bại
+(Email đã tồn tại, lỗi khác)" fillcolor=red shape=parallelogram style=filled]
+	EnterLoginInfo [label="Nhập email & mật khẩu" shape=parallelogram]
+	SendToFirebaseLogin [label="Gửi yêu cầu lên Firebase" shape=box]
+	CheckLoginSuccess [label="Firebase xác thực thông tin" shape=diamond]
+	LoginSuccess [label="Đăng nhập thành công
+Chuyển đến trang chính" fillcolor=lightgreen shape=parallelogram style=filled]
+	LoginFail [label="Đăng nhập thất bại
+(Tài khoản không tồn tại, sai mật khẩu)" fillcolor=red shape=parallelogram style=filled]
+	ForgotPassword [label="Người dùng chọn Quên mật khẩu" shape=box]
+	SendResetEmail [label="Gửi email đặt lại mật khẩu" fillcolor=yellow shape=parallelogram style=filled]
+	End [label="Kết thúc" fillcolor=lightgreen shape=oval style=filled]
+	Start -> ChooseAction
+	ChooseAction -> EnterRegInfo [label="Đăng ký"]
+	EnterRegInfo -> SendToFirebaseReg
+	SendToFirebaseReg -> CheckRegSuccess
+	CheckRegSuccess -> RegSuccess [label="Thành công"]
+	CheckRegSuccess -> RegFail [label="Thất bại"]
+	ChooseAction -> EnterLoginInfo [label="Đăng nhập"]
+	EnterLoginInfo -> SendToFirebaseLogin
+	SendToFirebaseLogin -> CheckLoginSuccess
+	CheckLoginSuccess -> LoginSuccess [label="Thành công"]
+	CheckLoginSuccess -> LoginFail [label="Thất bại"]
+	ChooseAction -> ForgotPassword [label="Quên mật khẩu"]
+	ForgotPassword -> SendResetEmail
+	RegSuccess -> End
+	LoginSuccess -> End
+	RegFail -> ChooseAction
+	LoginFail -> ChooseAction
+	SendResetEmail -> End
+}

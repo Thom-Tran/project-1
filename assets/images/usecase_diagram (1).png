@@ -1,0 +1,38 @@
+digraph UseCaseDiagram {
+	User [label="Người dùng" fillcolor=lightblue shape=ellipse style=filled]
+	Admin [label="Quản trị viên" fillcolor=lightcoral shape=ellipse style=filled]
+	register [label="Đăng ký, Đăng nhập" fillcolor=white shape=ellipse style=filled]
+	User -> register
+	view_songs [label="Xem danh mục bài hát, ca sĩ" fillcolor=white shape=ellipse style=filled]
+	User -> view_songs
+	play_song [label="Phát nhạc" fillcolor=white shape=ellipse style=filled]
+	User -> play_song
+	search [label="Tìm kiếm nhạc" fillcolor=white shape=ellipse style=filled]
+	User -> search
+	view_lyrics [label="Xem lời bài hát & MV" fillcolor=white shape=ellipse style=filled]
+	User -> view_lyrics
+	favorite [label="Lưu bài hát yêu thích, tạo playlist" fillcolor=white shape=ellipse style=filled]
+	User -> favorite
+	ranking [label="Xem bảng xếp hạng" fillcolor=white shape=ellipse style=filled]
+	User -> ranking
+	share [label="Chia sẻ bài hát" fillcolor=white shape=ellipse style=filled]
+	User -> share
+	recommend [label="Gợi ý bài hát" fillcolor=white shape=ellipse style=filled]
+	User -> recommend
+	comment [label="Bình luận bài hát" fillcolor=white shape=ellipse style=filled]
+	User -> comment
+	news [label="Xem tin tức âm nhạc" fillcolor=white shape=ellipse style=filled]
+	User -> news
+	timer [label="Hẹn giờ tắt nhạc" fillcolor=white shape=ellipse style=filled]
+	User -> timer
+	manage_songs [label="Quản lý danh sách bài hát" fillcolor=white shape=ellipse style=filled]
+	Admin -> manage_songs
+	manage_users [label="Quản lý tài khoản người dùng" fillcolor=white shape=ellipse style=filled]
+	Admin -> manage_users
+	moderate_comments [label="Kiểm duyệt bình luận" fillcolor=white shape=ellipse style=filled]
+	Admin -> moderate_comments
+	manage_rankings [label="Quản lý bảng xếp hạng" fillcolor=white shape=ellipse style=filled]
+	Admin -> manage_rankings
+	system_reports [label="Xem báo cáo hệ thống" fillcolor=white shape=ellipse style=filled]
+	Admin -> system_reports
+}

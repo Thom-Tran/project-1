@@ -1,0 +1,27 @@
+digraph UseCaseDiagram {
+	User [label="Người dùng" shape=ellipse]
+	use_case_0 [label="Đăng ký, Đăng nhập" shape=ellipse]
+	User -> use_case_0
+	use_case_1 [label="Xem danh mục bài hát, ca sĩ" shape=ellipse]
+	User -> use_case_1
+	use_case_2 [label="Phát nhạc" shape=ellipse]
+	User -> use_case_2
+	use_case_3 [label="Tìm kiếm nhạc" shape=ellipse]
+	User -> use_case_3
+	use_case_4 [label="Xem lời bài hát & MV" shape=ellipse]
+	User -> use_case_4
+	use_case_5 [label="Lưu bài hát yêu thích, tạo playlist" shape=ellipse]
+	User -> use_case_5
+	use_case_6 [label="Xem bảng xếp hạng" shape=ellipse]
+	User -> use_case_6
+	use_case_7 [label="Chia sẻ bài hát" shape=ellipse]
+	User -> use_case_7
+	use_case_8 [label="Gợi ý bài hát" shape=ellipse]
+	User -> use_case_8
+	use_case_9 [label="Bình luận bài hát" shape=ellipse]
+	User -> use_case_9
+	use_case_10 [label="Xem tin tức âm nhạc" shape=ellipse]
+	User -> use_case_10
+	use_case_11 [label="Hẹn giờ tắt nhạc" shape=ellipse]
+	User -> use_case_11
+}
