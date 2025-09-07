@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project 1</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    
 </head>
 <body>
     <header class="header">
@@ -56,29 +62,29 @@
      <section class="section-1">
         <div class="container">
             <div class="inner-wrap">
-                <img class="inner-bg-4" src="assets/images/section-1-bg-4.svg" alt="">
+                <img class="inner-bg-4" src="assets/images/section-1-bg-4.svg" alt="" data-aos="fade-down" data-aos-duration="800">
                 <div class="inner-content">
-                    <img class="inner-bg-1" src="assets/images/section-1-bg-1.svg" alt="">
+                    <img class="inner-bg-1" src="assets/images/section-1-bg-1.svg" alt="" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
                 <h1 class="inner-title">
-                    <div class="inner-title-main">Thêm Một Bạn</div>
-                    <div class="inner-title-sub">Thêm Ngàn Niềm Vui!</div>
+                    <div class="inner-title-main" data-aos="fade-up" data-aos-duration="800">Thêm Một Bạn</div>
+                    <div class="inner-title-sub" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">Thêm Ngàn Niềm Vui!</div>
                 </h1>
-                <div class="inner-desc">
+                <div class="inner-desc" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
                     Có một con thú cưng đồng nghĩa với việc bạn có thêm niềm vui mới. Chúng tôi có hơn 200 con thú cưng khác nhau có thể đáp ứng nhu cầu của bạn!
                 </div>
                 <div class="inner-button">
-                    <a href="#" class="button-outline">
+                    <a href="#" class="button-outline" data-aos="fade-up" data-aos-duration="800" data-aos-delay="450">
                         Giới Thiệu<i class="fa-solid fa-circle-play"></i>
                     </a>
-                    <a href="#" class="button">
+                    <a href="#" class="button" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
                         Khám Phá Ngay
                     </a>
                 </div>
                 <img src="assets/images/section-1-bg-2.svg" class="inner-bg-2" alt="">
                 </div>
                 <div class="inner-image">
-                    <img class="inner-bg-3" src="assets/images/section-1-bg-3.svg" alt="">
-                    <img src="assets/images/image-1.png" class="inner-image-main" alt="">
+                    <img class="inner-bg-3" src="assets/images/section-1-bg-3.svg" alt="" data-aos="fade-up" data-aos-duration="800">
+                    <img src="assets/images/image-1.png" class="inner-image-main" alt="" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">
                 </div>
             </div>
         </div>
@@ -90,14 +96,14 @@
         <div class="container">
             <div class="box-head">
                 <div class="inner-left">
-                    <div class="inner-sub-title">Có gì mới</div>
-                    <div class="inner-title">Một số vật nuôi của chúng tôi</div>
+                    <div class="inner-sub-title" data-aos="fade-up" data-aos-duration="800">Có gì mới</div>
+                    <div class="inner-title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">Một số vật nuôi của chúng tôi</div>
                 </div>
                 <div class="inner-right">
-                    <a href="#" class="button-outline">Xem thêm<i class="fa-solid fa-angle-right"></i></a>
+                    <a href="#" class="button-outline" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">Xem thêm<i class="fa-solid fa-angle-right"></i></a>
                 </div>
             </div>
-            <div class="inner-wrap">
+            <div class="inner-wrap" data-aos="fade-up" data-aos-duration="800" data-aos-delay="450">
                 <div class="product-item">
                     <div class="inner-image">
                         <a href="#"><img src="assets/images/product-1.jpg" alt=""></a>
@@ -317,7 +323,7 @@
                     </a>
                 </div>
             </div>
-            <div class="inner-wrap">
+            <!-- <div class="inner-wrap">
                 <div class="blog-item">
                     <a href="#">
                         <div class="inner-image">
@@ -366,7 +372,154 @@
                         </div>
                     </a>
                 </div>
+            </div> -->
+            
+            <div class="swiper swiper-blog">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="blog-item">
+                        <a href="#">
+                            <div class="inner-image">
+                                <img src="assets/images/blog-1.jpg" alt="">
+                            </div>
+                            <div class="inner-content">
+                                <div class="inner-tag">Kiến thức thú cưng</div>
+                                <h3 class="inner-title">
+                                    Pomeranian là gì? Cách nhận biết chó Pomeranian
+                                </h3>
+                                <p class="inner-desc">
+                                    Pomeranian hay còn gọi là chó Pomeranian (chó Pom) luôn nằm trong top những thú cưng dễ thương nhất. Không chỉ vậy, giống chó xiếc nhỏ nhắn, đáng yêu, thông minh, thân thiện và khéo léo.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="blog-item">
+                        <a href="#">
+                            <div class="inner-image">
+                                <img src="assets/images/blog-2.jpg" alt="">
+                            </div>
+                            <div class="inner-content">
+                                <div class="inner-tag">Kiến thức thú cưng</div>
+                                <h3 class="inner-title">
+                                    Chế độ ăn cho chó bạn cần biết
+                                </h3>
+                                <p class="inner-desc">
+                                    Việc chia khẩu phần ăn cho chó thoạt nghe có vẻ đơn giản nhưng có một số quy tắc bạn nên biết để chó cưng dễ dàng hấp thụ các chất dinh dưỡng trong khẩu phần ăn. Dành cho những người mới bắt đầu nuôi chó, đặc biệt là chó con mới sinh có sức đề kháng tương đối yếu.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    </div>
+                <div class="swiper-slide">
+                    <div class="blog-item">
+                    <a href="#">
+                        <div class="inner-image">
+                            <img src="assets/images/blog-3.jpg" alt="">
+                        </div>
+                        <div class="inner-content">
+                            <div class="inner-tag">Kiến thức thú cưng</div>
+                            <h3 class="inner-title">
+                                Tại sao chó cắn phá đồ đạc và cách phòng ngừa hiệu quả
+                            </h3>
+                            <p class="inner-desc">
+                                Chó cắn là hiện tượng phổ biến trong quá trình phát triển. Tuy nhiên, không ai muốn thấy đồ đạc, vật dụng quan trọng của mình bị chó cắn.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="blog-item">
+                    <a href="#">
+                        <div class="inner-image">
+                            <img src="assets/images/blog-3.jpg" alt="">
+                        </div>
+                        <div class="inner-content">
+                            <div class="inner-tag">Kiến thức thú cưng</div>
+                            <h3 class="inner-title">
+                                Tại sao chó cắn phá đồ đạc và cách phòng ngừa hiệu quả
+                            </h3>
+                            <p class="inner-desc">
+                                Chó cắn là hiện tượng phổ biến trong quá trình phát triển. Tuy nhiên, không ai muốn thấy đồ đạc, vật dụng quan trọng của mình bị chó cắn.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                </div>
+                
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
+            <!-- <div class="inner-wrap">
+                <div class="blog-item">
+                    <a href="#">
+                        <div class="inner-image">
+                            <img src="assets/images/blog-1.jpg" alt="">
+                        </div>
+                        <div class="inner-content">
+                            <div class="inner-tag">Kiến thức thú cưng</div>
+                            <h3 class="inner-title">
+                                Pomeranian là gì? Cách nhận biết chó Pomeranian
+                            </h3>
+                            <p class="inner-desc">
+                                Pomeranian hay còn gọi là chó Pomeranian (chó Pom) luôn nằm trong top những thú cưng dễ thương nhất. Không chỉ vậy, giống chó xiếc nhỏ nhắn, đáng yêu, thông minh, thân thiện và khéo léo.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="blog-item">
+                    <a href="#">
+                        <div class="inner-image">
+                            <img src="assets/images/blog-2.jpg" alt="">
+                        </div>
+                        <div class="inner-content">
+                            <div class="inner-tag">Kiến thức thú cưng</div>
+                            <h3 class="inner-title">
+                                Chế độ ăn cho chó bạn cần biết
+                            </h3>
+                            <p class="inner-desc">
+                                Việc chia khẩu phần ăn cho chó thoạt nghe có vẻ đơn giản nhưng có một số quy tắc bạn nên biết để chó cưng dễ dàng hấp thụ các chất dinh dưỡng trong khẩu phần ăn. Dành cho những người mới bắt đầu nuôi chó, đặc biệt là chó con mới sinh có sức đề kháng tương đối yếu.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="blog-item">
+                    <a href="#">
+                        <div class="inner-image">
+                            <img src="assets/images/blog-3.jpg" alt="">
+                        </div>
+                        <div class="inner-content">
+                            <div class="inner-tag">Kiến thức thú cưng</div>
+                            <h3 class="inner-title">
+                                Tại sao chó cắn phá đồ đạc và cách phòng ngừa hiệu quả
+                            </h3>
+                            <p class="inner-desc">
+                                Chó cắn là hiện tượng phổ biến trong quá trình phát triển. Tuy nhiên, không ai muốn thấy đồ đạc, vật dụng quan trọng của mình bị chó cắn.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="blog-item">
+                    <a href="#">
+                        <div class="inner-image">
+                            <img src="assets/images/blog-3.jpg" alt="">
+                        </div>
+                        <div class="inner-content">
+                            <div class="inner-tag">Kiến thức thú cưng</div>
+                            <h3 class="inner-title">
+                                Tại sao chó cắn phá đồ đạc và cách phòng ngừa hiệu quả
+                            </h3>
+                            <p class="inner-desc">
+                                Chó cắn là hiện tượng phổ biến trong quá trình phát triển. Tuy nhiên, không ai muốn thấy đồ đạc, vật dụng quan trọng của mình bị chó cắn.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div> -->
             <div class="inner-button-bottom">
                 <a href="#" class="button-outline">Xem thêm<i class="fa-solid fa-angle-right"></i></a>
             </div>
@@ -432,5 +585,8 @@
         </div>
      </footer>
     <!-- End Footer -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+     <script src="assets/js/script.js"></script>
 </body>
 </html>
